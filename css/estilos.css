@@ -1,0 +1,317 @@
+@font-face {
+    font-family: "interRegular";
+    src: url(../fuentes/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: 'interSemi';
+    src: url(../fuentes/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'romanezco';
+    src: url(../fuentes/Romanesco-Regular.ttf);
+}
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: #862222;
+}
+
+/* Header */
+header {
+    background-color: #a3a656; /* Verde oliva */
+    height: 70px;
+    display: flex;
+    justify-content: space-between; /* Espaciado entre menus */
+    align-items: center; /* Centrado vertical */
+    padding: 0 20px 0 70px; /* Espaciado interno */
+}
+header .menu1 ul a:hover { /* Aplica a cualquier texto o span en el footer */
+    color: #FFFF00; /* Cambia el color al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+}
+header .menu2 span:hover { /* Aplica a cualquier texto o span en el footer */
+    color: #FFFF00; /* Cambia el color al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+}
+
+/* Menú principal (menu1) */
+.menu1 ul {
+    list-style: none; /* Sin viñetas */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Elementos en línea */
+    gap: 15px; /* Espaciado entre los elementos */    
+}
+
+.menu1 ul li a {
+    text-decoration: none;
+    color: #000000; /* Negro */
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "interRegular"
+}
+
+/* Menú secundario (menu2) */
+.menu2 {
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    gap: 15px; /* Espaciado entre los elementos */
+}
+
+.menu2 img {
+    width: auto;
+    height: auto; /* Tamaño uniforme para los iconos */
+}
+
+.menu2 span {
+    font-family: "interRegular";
+    font-size: 14px;
+    color: #000000; /* Negro */
+}
+
+/*parte superior*/
+.superior{
+    background-image:url('../images/main.png') ;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.superior h1{
+    font-family: "romanezco";
+    font-size: 96px;
+}
+
+.superior p{
+    font-family: "interSemi";
+    font-size: 32px;
+}
+/*barra media*/
+.formularioCita{
+    background-color: #F2F6F6;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-family: "interRegular";
+}
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    font-size: 16px;
+    font-family: "interRegular";
+    width: 200px; 
+    
+   
+}
+
+/*configuracion placeHolder*/
+input[type="text"]::placeholder {
+    color: #aaa; /* Color del placeholder */
+    font-style: "interRegular";
+    font-size: 16px;
+    text-indent: 5px;
+}
+
+/*configuracion  tarjeta servicios*/
+
+.servicios{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 134px;
+
+}
+.servicios .card{
+    background-color: #ffffff;
+    margin: 100px 0px;
+    border-radius: 15px 15px 0 0 ;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.servicios .card img{
+        height: 100%;
+        width: auto;
+}
+
+.servicios .card-header{
+    background-color: #a3a656;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px 15px 0 0 ;
+
+}
+.card-header h3{
+    font-family: "interSemi";
+    font-size: 32px;
+    padding: 10px;
+    color: #ffffff;
+}
+.card p{
+    font-family: "interRegular";
+    font-size: 16px;
+    margin: 10px 0;
+    position: relative;
+
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.card-footer .price{
+    font-family: "interSemi";
+    font-size: 32px;
+}
+.card-footer .reserve-btn{
+    background-color: #a3a656;
+    border: none;
+    border-radius: 32px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "interRegular";
+    color: #ffffff
+}
+
+
+.membresia{
+    background-color: #F2F6F6;
+    justify-content: center;
+    align-items: center;
+    gap: 134px;
+    height: 770px;
+}
+.socio{
+    text-align: center;
+    background-color: #F2F6F6;
+    font-family: "interSemi";
+    font-size: 32px;
+    padding: 40px;
+}
+.membresia .cards{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.membresia .cards .card .marcoCarta{
+    width: 255px; /* Tamaño del marco exterior */
+    height: 255px; /* Tamaño del marco exterior */
+    border: 11px solid #3B3B00; /* Espesor del marco para que la imagen interior quede centrada */
+    border-radius: 50%; /* Círculo perfecto */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    overflow: hidden; /* Asegura que el contenido no salga del marco */
+    background-color: #fff; /* Fondo blanco para mejor contraste */
+}
+.membresia .cards .card .marcoCarta img{
+    width: 133px; /* Tamaño del logo */
+    height: 133px; /* Tamaño del logo */
+    object-fit: contain; /* Ajusta el logo para que se mantenga dentro del marco */
+}
+.membresia .cards .card .card-titulo{
+    font-family: "interSemi";
+    font-size: 32px;
+    padding: 10px;
+    color: #000000;
+    text-align: center;
+}
+.membresia .cards .card .condition-btn{
+    background-color: #a3a656;
+    border: none;
+    border-radius: 32px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "interRegular";
+    color: #ffffff;
+    text-align: center;
+    margin: 40px 0px 20px 0px;
+}
+.membresia .cards .card .card-list{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    text-align: left; 
+
+}
+.membresia .cards .card .card-list ul{
+    margin: 0;
+    padding: 10px;
+    font-family: "interRegular";
+    font-size: 16px;
+    padding: 10px;
+}
+/* Footer */
+.footer {
+    background-color: #384001; 
+    color: #a3a656;
+    height: 94px;
+    display: flex;
+    align-items: center; /* Centrado vertical */
+    padding: 0 20px 0 0; /* Espaciado interno */
+    font-family: "interRegular";
+    font-size: 16px;
+}
+.footer .footer-content{
+    width: 100%;
+    height: 94px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer .footer-content .links a{
+    text-decoration: none;
+    color: #a3a656;
+    margin: 0 70px;
+}
+.social {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    gap: 15px; /* Espaciado entre los elementos sociales */
+}
+
+.social span {
+    padding-right: 20px; /* Espaciado interno */
+    margin-right: 20px; /* Espaciado externo */
+}
+
+.membresia .cards .card .condition-btn:hover {
+    background-color: #384001; /* Cambia el fondo al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+}
+.card-footer .reserve-btn:hover {
+    background-color: #384001; /* Cambia el fondo al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+}
+.footer .footer-content .links a:hover, /* Aplica a enlaces en el footer */
+.footer .social span:hover { /* Aplica a cualquier texto o span en el footer */
+    color: #FFFF00; /* Cambia el color al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor a un puntero */
+}
